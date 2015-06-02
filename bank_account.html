@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bank Account</h1>
+
+      <form id="bank-account">
+
+        <div class="create-account">
+          <h2>Create a Bank Account</h2>
+
+          <label for="owner">Your Name</label>
+          <input type="text" name="owner" id="owner" required>
+          <label for="balance">Balance</label>
+          <input type="number" name="balance" id="balance" required>
+          <button id="create-bank-account" class="btn btn-default">Create Bank Account</button>
+        </div>
+      </form>
+
+
+      <div class="existing-account">
+        <h2>Account:</h2>
+        <h2><span class="owner"></span>'s account.</h2>
+        <br>
+        <h2><span class="balance"></span></h2>
+
+        <form id="deposit-withdraw">
+          <input type="number" name="deposit-amount" id="deposit-amount" value="0">
+          <button class="btn btn-info">Deposit Money</button><br>
+          <input type="number" name="withdraw-amount" id="withdraw-amount" value="0">
+          <button class="btn btn-warning">Withdraw Money</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
